@@ -1,0 +1,22 @@
+SECRET_KEY = "xxx"
+
+ALLOWED_HOSTS = ["127.0.0.1"]
+ADMIN_WHITE_LABEL = {"127.0.0.1"}
+API_WHITE_LABEL = {"127.0.0.1"}
+
+DEBUG = False
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "mytest",
+        "HOST": "/var/run/postgresql",
+        "PORT": ""
+    }
+}
+
+UPAPI_NETLOC = "https://127.0.0.1:12345"
+UPAPI_KEY = "123"
+
+CELERY_BROKER_URL = "redis+socket:///run/redis/redis-server.sock?db=0"
+CELERY_RESULT_BACKEND ="redis+socket:///run/redis/redis-server.sock?db=1"

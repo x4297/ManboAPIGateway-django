@@ -1,0 +1,12 @@
+/.venv/
+
+**/private_settings.py
+**/__pycache__
+**/*.sqlite3
+/.idea/
+/.vscode/
+
+**/migrations/*
+!**/migrations/__init__.py
+
+/celerybeat-schedule.*
